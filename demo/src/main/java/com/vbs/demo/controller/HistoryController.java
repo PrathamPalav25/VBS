@@ -18,7 +18,7 @@ public class HistoryController {
     HistoryRepo historyRepo;
 
     @GetMapping("/histories")
-    public List<History> getHistory(@PathVariable int id)
+    public List<History> getHistory()
     {
         return historyRepo.findAll();
     }
